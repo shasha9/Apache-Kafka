@@ -16,7 +16,8 @@ To install kafka in windows download the Binary files from Apache open source fo
 
 Steps :
 
-After downloading binary files of kafka. extract them all into your C:/ drive
-Copy the path C:/Kafka/bin/windows and add it into environment variables of your pc.
-You made it !!
+1.After downloading binary files of kafka. extract them all into your C:/ drive
+
+2.Copy the path C:/Kafka/bin/windows and add it into environment variables of your pc.
+
 You can start with running these commands in terminal kafka and zookeeper server
