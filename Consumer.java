@@ -8,8 +8,8 @@ import java.util.Properties;
 
 public class Consumer {
 
-        public static void main(String []args) {
-            Properties props = new Properties();
+        public  static void main(String []args) {
+            Properties  props = new Properties();
             props.put("bootstrap.servers", "localhost:9092");
             props.put("group.id", "ConsumerGroup");
             props.put("key.deserializer",
@@ -23,7 +23,7 @@ public class Consumer {
 
             try {
                 while (true) {
-                    ConsumerRecords<String, String> records = consumer.poll(100);
+                    ConsumerRecords<String, String> records =  consumer.poll(100);
                     for (ConsumerRecord<String, String> record : records)
                         System.out.println(record.value());
                 }
