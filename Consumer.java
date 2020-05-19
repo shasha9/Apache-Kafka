@@ -23,7 +23,7 @@ public class Consumer {
 
             try {
                 while (true) {
-                    ConsumerRecords<String, String> records =  consumer.poll(100);
+                    ConsumerRecords<String, String> records =   consumer.poll(100);
                     for (ConsumerRecord<String, String> record : records)
                         System.out.println(record.value());
                 }
