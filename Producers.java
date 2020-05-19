@@ -13,7 +13,7 @@ public class Producers
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-        Producer<String, String> producer = new KafkaProducer<>(props);
+        Producer<String, String> producer =  new KafkaProducer<>(props);
 
         ProducerRecord<String, String> record = new ProducerRecord<>("producer", "String Key", "Hello,Fire and Forget");
 
