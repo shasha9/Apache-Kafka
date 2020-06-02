@@ -14,7 +14,7 @@ public class ProducerAsync
         ProducerRecord<String, String> record = new ProducerRecord<>("producer", "String Key", "Hello! Async Send");
         try {
             producer.send(record,(recordMetadata, e) -> {
-                if (e != null)
+                if (e!= null)
                     e.printStackTrace();
             });
         } catch(Exception e) {
