@@ -15,9 +15,9 @@ public class ProducerSync
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-        Producer<String, String> producer = new KafkaProducer<>(props);
+        Producer<String, String> producer=new KafkaProducer<>(props);
 
-        ProducerRecord<String, String> record = new ProducerRecord<>("producer", "String Key", "Hello! Sync Send");
+        ProducerRecord<String, String> record=new ProducerRecord<>("producer", "String Key", "Hello! Sync Send");
 
         try {
             producer.send(record).get();
